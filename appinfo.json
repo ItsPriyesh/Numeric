@@ -1,0 +1,84 @@
+{
+  "uuid": "a35575b5-0833-454e-80be-ce950746003e",
+  "shortName": "Numeric",
+  "longName": "Numeric",
+  "companyName": "Priyesh Patel",
+  "versionLabel": "1.0",
+  "sdkVersion": "3",
+  "targetPlatforms": ["aplite", "basalt"],
+  "watchapp": {
+    "watchface": true
+  },
+  "appKeys": {
+    "dummy": 0
+  },
+  "resources": {
+    "media": [
+      {
+        "type": "font",
+        "name": "LIGHT_40",
+        "file": "Light.ttf"
+      },
+      {
+        "type": "png",
+        "name": "HOUR_1",
+        "file": "HourDigits/1.png"
+      },
+      {
+        "type": "png",
+        "name": "HOUR_2",
+        "file": "HourDigits/2.png"
+      },
+      {
+        "type": "png",
+        "name": "HOUR_3",
+        "file": "HourDigits/3.png"
+      },
+      {
+        "type": "png",
+        "name": "HOUR_4",
+        "file": "HourDigits/4.png"
+      },
+      {
+        "type": "png",
+        "name": "HOUR_5",
+        "file": "HourDigits/5.png"
+      },
+      {
+        "type": "png",
+        "name": "HOUR_6",
+        "file": "HourDigits/6.png"
+      },
+      {
+        "type": "png",
+        "name": "HOUR_7",
+        "file": "HourDigits/7.png"
+      },
+      {
+        "type": "png",
+        "name": "HOUR_8",
+        "file": "HourDigits/8.png"
+      },
+      {
+        "type": "png",
+        "name": "HOUR_9",
+        "file": "HourDigits/9.png"
+      },
+      {
+        "type": "png",
+        "name": "HOUR_10",
+        "file": "HourDigits/10.png"
+      },
+      {
+        "type": "png",
+        "name": "HOUR_11",
+        "file": "HourDigits/11.png"
+      },
+      {
+        "type": "png",
+        "name": "HOUR_12",
+        "file": "HourDigits/12.png"
+      }
+    ]
+  }
+}
