@@ -9,6 +9,7 @@ static BitmapLayer *s_hour_layer;
 static TextLayer *s_minute_layer;
 
 static const uint32_t hour_bitmap_ids[] = {
+  RESOURCE_ID_HOUR_12,
   RESOURCE_ID_HOUR_1,
   RESOURCE_ID_HOUR_2,
   RESOURCE_ID_HOUR_3,
@@ -20,18 +21,17 @@ static const uint32_t hour_bitmap_ids[] = {
   RESOURCE_ID_HOUR_9,
   RESOURCE_ID_HOUR_10,
   RESOURCE_ID_HOUR_11,
-  RESOURCE_ID_HOUR_12
 };
 
 static GBitmap *hour_bitmaps[ARRAY_LENGTH(hour_bitmap_ids)];
 
 static void update_minute() {
-  time_t temp = time(NULL); 
+  time_t temp = time(NULL);
   struct tm *tick_time = localtime(&temp);
 
   static char s_minute_buffer[3];
   snprintf(s_minute_buffer, sizeof(s_minute_buffer), "%d", tick_time -> tm_min);
-  
+
   text_layer_set_text(s_minute_layer, s_minute_buffer);
 }
 
@@ -39,10 +39,10 @@ static void update_hour() {
   time_t temp = time(NULL);
   struct tm *tick_time = localtime(&temp);
 
-  int hour = tick_time -> tm_hour;
+  int hour = tick_time->tm_hour;
   if (hour > 12) hour -= 12;
 
-  bitmap_layer_set_bitmap(s_hour_layer, hour_bitmaps[hour - 1]);
+  bitmap_layer_set_bitmap(s_hour_layer, hour_bitmaps[hour]);
 }
 
 static void tick_handler(struct tm *tick_time, TimeUnits units_changed) {
