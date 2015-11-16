@@ -1,6 +1,6 @@
 #include <pebble.h>
 
-#define MARGIN_TOP 25
+#define MARGIN_TOP PBL_IF_ROUND_ELSE(35 , 25)
 #define HOUR_HEIGHT 74
 #define MINUTE_HEIGHT 40
 
